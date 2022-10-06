@@ -1,14 +1,14 @@
 const mongoose = require('mongoose');
 
 const dataSchema = new mongoose.Schema({
-    name: {
+    product: {
         required: true,
         type: String
     },
-    age: {
+    price: {
         required: true,
         type: Number
     }
 })
 
-module.exports = mongoose.model('Data', dataSchema)
+module.exports = mongoose.model('productList', dataSchema)
